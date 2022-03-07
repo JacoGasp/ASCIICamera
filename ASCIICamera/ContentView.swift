@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var camera = CameraHandler()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ASCIICameraView(cameraOutput: camera.cameraOutput)
+            .onAppear(perform: camera.startSession)
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

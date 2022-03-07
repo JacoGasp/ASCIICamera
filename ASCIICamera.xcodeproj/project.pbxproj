@@ -6,7 +6,16 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C20184F927D691BB0081EF90 /* ASCIICameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20184F827D691BB0081EF90 /* ASCIICameraView.swift */; };
+		C2C397A927D5F68E00493156 /* ASCIICameraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3976C27D5279200493156 /* ASCIICameraApp.swift */; };
+		C2C397AA27D5F68E00493156 /* CameraHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3977D27D52C3800493156 /* CameraHandler.swift */; };
+		C2C397AB27D5F68E00493156 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3976E27D5279200493156 /* ContentView.swift */; };
+		C2C397AD27D5F68E00493156 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3977F27D52E1F00493156 /* VideoPlayerView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		C20184F827D691BB0081EF90 /* ASCIICameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCIICameraView.swift; sourceTree = "<group>"; };
 		C2C3976C27D5279200493156 /* ASCIICameraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCIICameraApp.swift; sourceTree = "<group>"; };
 		C2C3976E27D5279200493156 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C2C3977027D5279400493156 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -14,7 +23,6 @@
 		C2C3977527D5279400493156 /* ASCIICamera.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ASCIICamera.entitlements; sourceTree = "<group>"; };
 		C2C3977D27D52C3800493156 /* CameraHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHandler.swift; sourceTree = "<group>"; };
 		C2C3977F27D52E1F00493156 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
-		C2C3978127D532D700493156 /* ASCIIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCIIViewController.swift; sourceTree = "<group>"; };
 		C2C3979A27D5F16A00493156 /* ASCIICamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASCIICamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -49,9 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				C2C3976C27D5279200493156 /* ASCIICameraApp.swift */,
+				C20184F827D691BB0081EF90 /* ASCIICameraView.swift */,
 				C2C3977D27D52C3800493156 /* CameraHandler.swift */,
 				C2C3976E27D5279200493156 /* ContentView.swift */,
-				C2C3978127D532D700493156 /* ASCIIViewController.swift */,
 				C2C3977F27D52E1F00493156 /* VideoPlayerView.swift */,
 				C2C3977027D5279400493156 /* Assets.xcassets */,
 				C2C3977527D5279400493156 /* ASCIICamera.entitlements */,
@@ -136,6 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2C397A927D5F68E00493156 /* ASCIICameraApp.swift in Sources */,
+				C2C397AA27D5F68E00493156 /* CameraHandler.swift in Sources */,
+				C2C397AB27D5F68E00493156 /* ContentView.swift in Sources */,
+				C2C397AD27D5F68E00493156 /* VideoPlayerView.swift in Sources */,
+				C20184F927D691BB0081EF90 /* ASCIICameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

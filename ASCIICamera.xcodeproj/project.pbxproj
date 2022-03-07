@@ -6,24 +6,20 @@
 	objectVersion = 55;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		C2C3976D27D5279200493156 /* ASCIICameraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3976C27D5279200493156 /* ASCIICameraApp.swift */; };
-		C2C3976F27D5279200493156 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3976E27D5279200493156 /* ContentView.swift */; };
-		C2C3977127D5279400493156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2C3977027D5279400493156 /* Assets.xcassets */; };
-		C2C3977427D5279400493156 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2C3977327D5279400493156 /* Preview Assets.xcassets */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		C2C3976927D5279200493156 /* ASCIICamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASCIICamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C3976C27D5279200493156 /* ASCIICameraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCIICameraApp.swift; sourceTree = "<group>"; };
 		C2C3976E27D5279200493156 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C2C3977027D5279400493156 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2C3977327D5279400493156 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C2C3977527D5279400493156 /* ASCIICamera.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ASCIICamera.entitlements; sourceTree = "<group>"; };
+		C2C3977D27D52C3800493156 /* CameraHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHandler.swift; sourceTree = "<group>"; };
+		C2C3977F27D52E1F00493156 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		C2C3978127D532D700493156 /* ASCIIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCIIViewController.swift; sourceTree = "<group>"; };
+		C2C3979A27D5F16A00493156 /* ASCIICamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASCIICamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C2C3976627D5279200493156 /* Frameworks */ = {
+		C2C3979727D5F16A00493156 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,7 +40,7 @@
 		C2C3976A27D5279200493156 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C2C3976927D5279200493156 /* ASCIICamera.app */,
+				C2C3979A27D5F16A00493156 /* ASCIICamera.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,7 +49,10 @@
 			isa = PBXGroup;
 			children = (
 				C2C3976C27D5279200493156 /* ASCIICameraApp.swift */,
+				C2C3977D27D52C3800493156 /* CameraHandler.swift */,
 				C2C3976E27D5279200493156 /* ContentView.swift */,
+				C2C3978127D532D700493156 /* ASCIIViewController.swift */,
+				C2C3977F27D52E1F00493156 /* VideoPlayerView.swift */,
 				C2C3977027D5279400493156 /* Assets.xcassets */,
 				C2C3977527D5279400493156 /* ASCIICamera.entitlements */,
 				C2C3977227D5279400493156 /* Preview Content */,
@@ -72,13 +71,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C2C3976827D5279200493156 /* ASCIICamera */ = {
+		C2C3979927D5F16A00493156 /* ASCIICamera */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2C3977827D5279400493156 /* Build configuration list for PBXNativeTarget "ASCIICamera" */;
+			buildConfigurationList = C2C397A627D5F16C00493156 /* Build configuration list for PBXNativeTarget "ASCIICamera" */;
 			buildPhases = (
-				C2C3976527D5279200493156 /* Sources */,
-				C2C3976627D5279200493156 /* Frameworks */,
-				C2C3976727D5279200493156 /* Resources */,
+				C2C3979627D5F16A00493156 /* Sources */,
+				C2C3979727D5F16A00493156 /* Frameworks */,
+				C2C3979827D5F16A00493156 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -86,7 +85,7 @@
 			);
 			name = ASCIICamera;
 			productName = ASCIICamera;
-			productReference = C2C3976927D5279200493156 /* ASCIICamera.app */;
+			productReference = C2C3979A27D5F16A00493156 /* ASCIICamera.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +98,7 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					C2C3976827D5279200493156 = {
+					C2C3979927D5F16A00493156 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -117,30 +116,26 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C2C3976827D5279200493156 /* ASCIICamera */,
+				C2C3979927D5F16A00493156 /* ASCIICamera */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C2C3976727D5279200493156 /* Resources */ = {
+		C2C3979827D5F16A00493156 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2C3977427D5279400493156 /* Preview Assets.xcassets in Resources */,
-				C2C3977127D5279400493156 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C2C3976527D5279200493156 /* Sources */ = {
+		C2C3979627D5F16A00493156 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2C3976F27D5279200493156 /* ContentView.swift in Sources */,
-				C2C3976D27D5279200493156 /* ASCIICameraApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +257,7 @@
 			};
 			name = Release;
 		};
-		C2C3977927D5279400493156 /* Debug */ = {
+		C2C397A727D5F16C00493156 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -276,20 +271,21 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow Camera";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jacopogasparetto.ASCIICamera;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacopogasparetto.ASCIICamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		C2C3977A27D5279400493156 /* Release */ = {
+		C2C397A827D5F16C00493156 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -303,13 +299,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow Camera";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jacopogasparetto.ASCIICamera;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacopogasparetto.ASCIICamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -328,11 +325,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2C3977827D5279400493156 /* Build configuration list for PBXNativeTarget "ASCIICamera" */ = {
+		C2C397A627D5F16C00493156 /* Build configuration list for PBXNativeTarget "ASCIICamera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C2C3977927D5279400493156 /* Debug */,
-				C2C3977A27D5279400493156 /* Release */,
+				C2C397A727D5F16C00493156 /* Debug */,
+				C2C397A827D5F16C00493156 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

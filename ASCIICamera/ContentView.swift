@@ -12,6 +12,7 @@ struct ContentView: View {
     var body: some View {
         ASCIICameraView(cameraOutput: camera.cameraOutput)
             .onAppear(perform: camera.startSession)
+            .onDisappear(perform: camera.stopSession)
     }
 }
 

@@ -17,7 +17,7 @@ class CameraOutput: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleBu
       return v0 + t * (v1 - v0);
     }
     
-    let density = Array("#####********+++++++++=========--------:::::::::..")
+    var density = Array("#####********+++++++++=========--------:::::::::..")
     
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
